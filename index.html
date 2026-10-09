@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Assignments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>JavaScript DOM Manipulation Assignments</h1>
+
+    <!-- QUESTION 1 -->
+    <div class="card1">
+        <h2>Question 1: Show the Box!</h2>
+        <button id="showBoxBtn" onclick="showBox()" ondblclick="hideBox()">Show / Hide Box</button>
+        
+        <div id="secretBox" class="box">
+            <h3>🎉 Welcome!</h3>
+            <p>This box is shown using CSS classes, NOT direct inline styles!</p>
+        </div>
+    </div>
+
+    <!-- QUESTION 2 -->
+    <div class="card1">
+        <h2>Question 2: Interactive Image</h2>
+        <p>Hover mouse over the image below:</p>
+        <img 
+            id="myImage" 
+            class="interactive-img" 
+            src="picture/goku.jpg" 
+            alt="Interactive Demo Image"
+            onmouseover="hoverImg()" 
+            onmouseout="notHoverImg()"
+        >
+    </div>
+
+    <!-- QUESTION 3 -->
+    <div class="card1">
+        <h2>Question 3: Notice Board</h2>
+        <button onclick="highlight()">Highlight Notices</button>
+        
+        <div id="importan1">
+            <p class="notice">Notice 1: Submission deadline for Assignment 1 is Friday.</p>
+            <p class="notice">Notice 2: Mid-term examinations start next week.</p>
+            <p class="notice">Notice 3: Library will remain closed on Sunday.</p>
+            <p class="notice">Notice 4: Guest lecture scheduled for 2:00 PM tomorrow.</p>
+            <p class="notice">Notice 5: Sports gala registration is now open.</p>
+        </div>
+    </div>
+
+    <!-- QUESTION 4 -->
+    <div class="card2">
+        <h2>Question 4: Student Rules & Course Information</h2>
+        <div class="btn">
+        <button onclick="rules()">Highlight Rules</button>
+        <button onclick="rules1()">Highlight Course</button>
+        </div>
+
+        <div id="studentRules" class="sectionBox">
+            <h3>Student Rules</h3>
+            <p class="rule">- Rule 1: Always attend classes on time.</p>
+            <p class="rule">- Rule 2: Keep your ID card visible at all times.</p>
+            <p class="rule">- Rule 3: Complete and submit assignments before deadlines.</p>
+        </div>
+
+        <div id="courseInfo" class="sectionBox">
+            <h3>Course Information</h3>
+            <p class="course">- HTML: Structural framework of web applications.</p>
+            <p class="course">- CSS: Styling, layouts, and responsive animations.</p>
+            <p class="course">- JavaScript: Dynamic interactivity and logic implementation.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
